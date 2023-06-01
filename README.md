@@ -2,7 +2,5 @@
 
 Capture live data from Twitter Spaces
 
-- live audio capture
-- live transcript capture
-- search
-
+- asynchronously capture live audio and transcripts for 500 streams per IP
+- search Live, Upcoming, and Top streams by keyword
