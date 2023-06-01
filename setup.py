@@ -3,16 +3,12 @@ from textwrap import dedent
 from setuptools import find_packages, setup
 
 install_requires = [
+    "aiofiles",
     "websockets",
     "nest_asyncio",
-    "aiohttp",
     "httpx",
-    "tqdm",
     "orjson",
-    "requests",
-    "bcrypt",
-    "python-gnupg",
-    "pyopenssl",
+    "tqdm",
     'uvloop; platform_system != "Windows"',
 ]
 
@@ -22,13 +18,13 @@ setup(
     python_requires=">=3.10.10",
     description="Twitter Spy Tools",
     long_description=dedent('''
-    
+
+    ### Twitter Spy Tools
+
     Capture live data from Twitter Spaces
-    
-    - live audio capture
-    - live transcript capture
-    - ability to download streams from playback-disabled spaces
-    - keyword search
+
+    - asynchronously capture live audio and transcripts for 500 streams per IP
+    - search Live, Upcoming, and Top streams by keyword
 
     '''),
     long_description_content_type='text/markdown',
